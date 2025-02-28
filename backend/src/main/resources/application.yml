@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${CLEARDB_DATABASE_URL:jdbc:mysql://db:3306/${MYSQL_DATABASE}}
     username: ${DB_USERNAME:root}}
-    password: ${DB_PASSWORD:root}
+    password: ${DB_PASSWORD:rootConfigure backend for Aiven MySQL}
   data:
     redis:
       host: localhost
