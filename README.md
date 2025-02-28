@@ -1,9 +1,9 @@
 # Note Calendar 
 A simple calendar app to help you organize your goals, events, and todos—all in one place!  
 # What Does It Do?
-**Track Your Goals**: Connect your personal goals with events and daily todos. 
-**Manage Your Time**: Add, view, and edit events and tasks on a weekly calendar.  
-**Stay Organized**: Works smoothly across months to keep your schedule clear.
+- **Track Your Goals**: Connect your personal goals with events and daily todos. 
+- **Manage Your Time**: Add, view, and edit events and tasks on a weekly calendar.  
+- **Stay Organized**: Works smoothly across months to keep your schedule clear.
 
 ![Image](https://github.com/user-attachments/assets/09b10042-1360-44de-98c1-8ee34817c0a6)
 ***
