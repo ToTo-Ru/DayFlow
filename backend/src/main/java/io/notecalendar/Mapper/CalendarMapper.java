@@ -24,7 +24,7 @@ public interface CalendarMapper {
     @Select("select * from event where user_id = #{userId}")
     ArrayList<Event> findEventsByUserId(int userId);
 
-    @Select("select * from event where date_start between #{startDate} and #{endDate} and user_id = #{userId}")
+    @Select("SELECT * FROM event WHERE date_start >= #{startDate} AND date_start < DATE_ADD(#{endDate}, INTERVAL 1 DAY) AND user_id = #{userId}")
     ArrayList<Event> findEventsByDateRange(int userId, String startDate, String endDate);
 
     @Select("select * from todo where date between #{startDate} and #{endDate} and user_id = #{userId}")
