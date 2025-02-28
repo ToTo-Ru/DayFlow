@@ -2,7 +2,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${CLEARDB_DATABASE_URL:jdbc:mysql://db:3306/${MYSQL_DATABASE}}
+    url: ${DB_URL:jdbc:mysql://localhost:3306/noteschedule}
     username: ${DB_USERNAME:root}}
     password: ${DB_PASSWORD:rootConfigure backend for Aiven MySQL}
   data:
