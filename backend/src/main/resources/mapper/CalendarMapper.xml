@@ -3,17 +3,17 @@
 <mapper namespace="cathy.chen.Mapper.CalendarMapper">
 
     <!-- 定義結果映射 -->
-    <resultMap id="GoalResultMap" type="cathy.chen.Pojo.MySQLTable.GoalEventTodoDTO">
+    <resultMap id="GoalResultMap" type="io.notecalendar.Pojo.MySQLTable.GoalEventTodoDTO">
         <id property="goalId" column="goalId"/>
         <result property="goalName" column="goalName"/> <!-- 如果需要 -->
         <result property="done" column="goalDone"/>
         <!-- 一對多映射：todos -->
-        <collection property="todos" ofType="cathy.chen.Pojo.MySQLTable.Todo">
+        <collection property="todos" ofType="io.notecalendar.Pojo.MySQLTable.Todo">
             <id property="id" column="todoId"/>
             <result property="todoName" column="todoName"/>
         </collection>
         <!-- 一對多映射：events -->
-        <collection property="events" ofType="cathy.chen.Pojo.MySQLTable.Event">
+        <collection property="events" ofType="io.notecalendar.Pojo.MySQLTable.Event">
             <id property="id" column="eventId"/>
             <result property="eventName" column="eventName"/>
         </collection>
