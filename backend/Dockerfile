@@ -1,5 +1,6 @@
 FROM openjdk:21-jdk-slim
 WORKDIR /app
-COPY target/NoteScheduleAppBackend-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY . .
+RUN ./mvnw package
+EXPOSE $PORT
+CMD ["java", "-jar", "target/NoteScheduleAppBackend-0.0.1-SNAPSHOT.jar"]
