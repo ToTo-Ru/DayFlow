@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${DB_URL:jdbc:mysql://localhost:3306/noteschedule}
     username: ${DB_USERNAME:root}}
-    password: ${DB_PASSWORD:rootConfigure backend for Aiven MySQL}
+    password: ${DB_PASSWORD:root}
   data:
     redis:
       host: localhost
