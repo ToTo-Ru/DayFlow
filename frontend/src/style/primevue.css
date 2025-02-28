@@ -1,0 +1,44 @@
+/* * This is a css ONLY for PrimeVue Component!!Due to conflict between Vuesax and PrimeVue, PrimeVue should add (body / html) for obtaining a stronger weighting */
+
+@import 'primeicons/primeicons.css';
+
+.p-panelmenu-header,
+.p-panelmenu-item-label {
+  font-size: 0.8rem;
+}
+
+.note-desc {
+  .p-inputtext {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    height: 1rem;
+  }
+
+  .p-inplace,
+  .p-inplace-display {
+    margin: 0;
+    padding: 0;
+    color: #6f91b5;
+  }
+  span {
+    margin-right: 1rem;
+  }
+}
+
+.to-do-item .p-tag {
+  width: 3rem;
+  height: 1.2rem;
+  font-size: 0.7rem;
+}
+
+.event .p-tag {
+  width: 3rem;
+  height: 1.2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.p-menu .p-menu-item {
+  height: 2rem;
+  font-size: 0.9rem;
+}
