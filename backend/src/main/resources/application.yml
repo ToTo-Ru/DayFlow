@@ -3,8 +3,8 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${CLEARDB_DATABASE_URL:jdbc:mysql://db:3306/${MYSQL_DATABASE}}
-    username: root
-    password: ${DB_PASSWORD}
+    username: ${DB_USERNAME:root}}
+    password: ${DB_PASSWORD:root}
   data:
     redis:
       host: localhost
