@@ -9,6 +9,6 @@ RUN ./mvnw package -DskipTests
 # 第二階段：運行應用
 FROM eclipse-temurin:21-jdk-jammy
 WORKDIR /app
-COPY --from=builder /app/target/NoteScheduleAppBackend-0.0.1-SNAPSHOT.jar
+COPY --from=builder /app/target/NoteScheduleAppBackend-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
