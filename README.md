@@ -5,7 +5,7 @@ A simple calendar app to help you organize your goals, events, and todos—all i
 **Manage Your Time**: Add, view, and edit events and tasks on a weekly calendar.  
 **Stay Organized**: Works smoothly across months to keep your schedule clear.
 
-![[Pasted image 20250228163148.png]]
+![Image](https://github.com/user-attachments/assets/09b10042-1360-44de-98c1-8ee34817c0a6)
 ***
 # How to use the app?
 1. **Get your code**: Clone the whole repository
