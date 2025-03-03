@@ -1,5 +1,20 @@
 <template>
-  <div class="note-items">
+  <div class="empty-calendar" v-if="allSubArraysEmpty">
+    <div class="reminder">
+      <div class="title">
+        Click the '+' at the bottom right to add new items
+      </div>
+      <ul>
+        <li>Goal: A node link events and todos</li>
+        <li>Event: Items with date and time specifically (e.g. meeting)</li>
+        <li>
+          Todos: Items with date and status specifically (e.g. prepare material)
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note-items" v-else>
     <ul>
       <li v-for="(item, index) in calendarStore.getCalendarItems" :key="index">
         <vs-scrollbar height="45vh">
@@ -192,6 +207,7 @@ import { ref, watch } from 'vue'
 // import { ref } from 'vue'
 const calendarStore = useCalendarStore()
 
+const allSubArraysEmpty = ref(true)
 const editTodoFormShown = ref(false)
 const editEventFormShown = ref(false)
 
@@ -276,6 +292,15 @@ watch(
   },
   { deep: true },
 )
+watch(
+  () => calendarStore.getCalendarItems,
+  (newItems) => {
+    console.log(newItems)
+    allSubArraysEmpty.value = newItems.every(
+      (item) => item.dayEvent.length === 0 && item.dayTodo.length === 0,
+    )
+  },
+)
 </script>
 
 <style lang="scss" scoped>
@@ -330,5 +355,25 @@ li {
 .con-footer {
   display: flex;
   justify-content: end;
+}
+.empty-calendar {
+  position: relative;
+  height: 100%;
+  .reminder {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 1.5rem;
+    color: #a192a6;
+    li {
+      font-size: 1rem;
+      padding: 0.5rem;
+      padding-left: 3rem;
+
+      color: #b9b0bc;
+    }
+  }
 }
 </style>
