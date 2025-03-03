@@ -15,16 +15,16 @@
       <li
         v-for="(date, index) in weekFullDate"
         :key="index"
-        :class="{ today: date == new Date().getDate() }"
+        :class="{ today: date.toDateString() == new Date().toDateString() }"
       >
-        {{ date }}
+        {{ date.getDate() }}
       </li>
     </ul>
   </div>
 </template>
 <script setup>
 import { useCalendarStore } from '@/stores/EventToDo'
-import { weekOnlyDate } from '@/utils/getTime'
+import { weekInDateFormate } from '@/utils/getTime'
 import { ref, watch } from 'vue'
 const calendarStore = useCalendarStore()
 const weekFullDate = ref([])
@@ -34,7 +34,8 @@ const weekFullDate = ref([])
 watch(
   () => calendarStore.selectedDate,
   (newDate) => {
-    weekFullDate.value = weekOnlyDate(newDate)
+    weekFullDate.value = weekInDateFormate(newDate)
+    console.log(weekFullDate.value[0] + new Date())
   },
   { immediate: true }, // Run immediately on mount to ensure first time setup
 )
