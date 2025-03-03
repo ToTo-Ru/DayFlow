@@ -7,7 +7,7 @@ import jakarta.validation.groups.Default;
 
 public class User {
     private Integer id;
-    @Pattern(regexp = "^\\S{4,10}$", groups = addUser.class)
+    @Pattern(regexp = "^.{4,10}$", groups = addUser.class)
     private String username;
 //    1 capital, 1number, > 5
     @Pattern(regexp = "^(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d!@#$%^&*()_+={}:;,.<>?]{6,}$", groups = {addUser.class, loginUser.class})
