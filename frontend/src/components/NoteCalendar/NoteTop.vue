@@ -51,8 +51,7 @@ const calendar = useCalendarStore()
 const buttonColor = ref('#6f91b5')
 
 //date
-const today = new Date()
-const year = today.getFullYear()
+const year = ref()
 
 const monthsAbbr = [
   'JAN',
@@ -68,7 +67,26 @@ const monthsAbbr = [
   'NOV',
   'DEC',
 ]
-const month = monthsAbbr[today.getMonth()]
+const month = ref()
+watch(
+  () => calendar.selectedDate,
+  (newDate, oldDate) => {
+    if (isNaN(oldDate)) {
+      month.value = monthsAbbr[newDate.getMonth()]
+      year.value = newDate.getFullYear()
+    } else {
+      if (newDate.getMonth() != oldDate.getMonth()) {
+        month.value = monthsAbbr[newDate.getMonth()]
+      }
+      if (newDate.getFullYear() != oldDate.getFullYear()) {
+        year.value = newDate.getFullYear()
+      }
+    }
+  },
+  {
+    immediate: true,
+  },
+)
 
 //calendar
 const datePicked = ref(new Date())

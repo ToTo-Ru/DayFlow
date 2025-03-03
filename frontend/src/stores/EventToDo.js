@@ -186,6 +186,9 @@ export const useCalendarStore = defineStore('useCalendarStore', () => {
 
     isLoaded.value = false
   }
+  const getSelectedDate = computed(() => {
+    return selectedDate.value
+  })
   return {
     events,
     todo,
@@ -208,5 +211,6 @@ export const useCalendarStore = defineStore('useCalendarStore', () => {
     reset,
     setEvents,
     fetchInitialData,
+    getSelectedDate,
   }
 })

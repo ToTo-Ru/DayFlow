@@ -24,6 +24,7 @@ router.beforeEach(async (to, from, next) => {
   if (token) {
     try {
       if (!calendar.isLoaded) {
+        await calendar.setSelectedDate(new Date())
         await calendar.fetchInitialData()
       }
 
