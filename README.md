@@ -29,3 +29,9 @@ docker-compose up --build
 - **Backend**: Spring Boot with MyBatis (handles your data).
 - **Database**: MySQL (stores everything).
 - **Docker**: Makes it easy to run anywhere with Docker Compose.
+***
+#### How I Solved Challenges
+- **Cross-Month Bug**: Adjusted SQL queries in MyBatis to handle DATETIME fields, ensuring events display correctly across months.
+- **CORS Issue**: Configured Spring Boot to allow cross-origin requests from the frontend domain.
+- **Database Connection**: Fixed connectivity by aligning environment variables and Docker settings.
+- **Unified API Response**: Designed a consistent return structure (`Result`) in Spring Boot with `code`, `data`, and `message` fields, improving frontend error handling and data consistency across all endpoints.
