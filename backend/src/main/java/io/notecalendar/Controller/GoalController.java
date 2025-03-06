@@ -1,9 +1,9 @@
-package io.notecalendar.contoller;
+package io.notecalendar.Controller;
 
 import io.notecalendar.Pojo.MySQLTable.Goal;
 import io.notecalendar.Pojo.MySQLTable.GoalEventTodoDTO;
 import io.notecalendar.Pojo.development.Result;
-import io.notecalendar.service.GoalService;
+import io.notecalendar.Service.GoalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package io.notecalendar.utils;
+package io.notecalendar.Utils;
 
 import io.notecalendar.Pojo.MySQLTable.Event;
 import io.notecalendar.Pojo.MySQLTable.EventControllerDTO;

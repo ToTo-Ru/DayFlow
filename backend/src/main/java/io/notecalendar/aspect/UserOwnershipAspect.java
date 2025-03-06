@@ -1,11 +1,10 @@
-package io.notecalendar.aspect;
+package io.notecalendar.Aspect;
 
 import io.notecalendar.Mapper.EventMapper;
 import io.notecalendar.Mapper.TodoMapper;
 import io.notecalendar.Pojo.MySQLTable.Todo;
-import io.notecalendar.service.EventService;
-import io.notecalendar.service.TodoService;
-import io.notecalendar.utils.ThreadLocalUtil;
+import io.notecalendar.Service.TodoService;
+import io.notecalendar.Utils.ThreadLocalUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;

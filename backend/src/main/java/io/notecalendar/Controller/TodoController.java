@@ -1,8 +1,8 @@
-package io.notecalendar.contoller;
+package io.notecalendar.Controller;
 
 import io.notecalendar.Pojo.MySQLTable.Todo;
 import io.notecalendar.Pojo.development.Result;
-import io.notecalendar.service.TodoService;
+import io.notecalendar.Service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

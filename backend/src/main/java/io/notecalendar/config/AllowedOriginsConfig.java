@@ -1,4 +1,4 @@
-package io.notecalendar.config;
+package io.notecalendar.Config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

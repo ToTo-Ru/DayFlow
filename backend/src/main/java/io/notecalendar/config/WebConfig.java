@@ -1,6 +1,6 @@
-package io.notecalendar.config;
+package io.notecalendar.Config;
 
-import io.notecalendar.interceptor.LoginInterceptor;
+import io.notecalendar.Interceptor.LoginInterceptor;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

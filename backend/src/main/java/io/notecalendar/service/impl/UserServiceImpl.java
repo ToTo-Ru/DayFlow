@@ -1,12 +1,12 @@
-package io.notecalendar.service.impl;
+package io.notecalendar.Service.impl;
 
 import io.notecalendar.Pojo.development.Result;
 import io.notecalendar.Pojo.MySQLTable.User;
 import io.notecalendar.Mapper.UserMapper;
-import io.notecalendar.service.UserService;
-import io.notecalendar.utils.JwtUtil;
-import io.notecalendar.utils.Md5Util;
-import io.notecalendar.utils.ThreadLocalUtil;
+import io.notecalendar.Service.UserService;
+import io.notecalendar.Utils.JwtUtil;
+import io.notecalendar.Utils.Md5Util;
+import io.notecalendar.Utils.ThreadLocalUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package io.notecalendar.utils;
+package io.notecalendar.Utils;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;

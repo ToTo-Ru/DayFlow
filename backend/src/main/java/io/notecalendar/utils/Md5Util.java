@@ -1,4 +1,4 @@
-package io.notecalendar.utils;
+package io.notecalendar.Utils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

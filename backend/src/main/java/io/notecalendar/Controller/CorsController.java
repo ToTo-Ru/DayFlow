@@ -1,4 +1,4 @@
-package io.notecalendar.contoller;
+package io.notecalendar.Controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
