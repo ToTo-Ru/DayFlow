@@ -5,7 +5,12 @@
 
     <div class="input-group">
       <vs-input
-        style="width: 20rem; font-size: 0.8rem"
+        style="
+          width: 20rem;
+          font-size: 0.8rem;
+          background: rgba(230, 230, 230, 0.774);
+          border-radius: 5px;
+        "
         v-model="user.username"
         color="#7d33ff"
         input-style="shadow"
@@ -23,7 +28,12 @@
       </vs-input>
 
       <vs-input
-        style="width: 20rem"
+        style="
+          width: 20rem;
+          font-size: 0.8rem;
+          background: rgba(230, 230, 230, 0.774);
+          border-radius: 5px;
+        "
         v-model="user.password"
         color="#7d33ff"
         input-style="shadow"
@@ -42,7 +52,12 @@
       </vs-input>
 
       <vs-input
-        style="width: 20rem; font-size: 0.8rem"
+        style="
+          width: 20rem;
+          font-size: 0.8rem;
+          background: rgba(230, 230, 230, 0.774);
+          border-radius: 5px;
+        "
         v-model="user.email"
         color="#7d33ff"
         input-style="shadow"
@@ -107,6 +122,7 @@ const registerAccount = async () => {
 h1 {
   margin-bottom: 2rem;
   font-size: 2rem;
+  color: rgb(125, 85, 115);
 }
 .input-group {
   margin-top: 1rem;
