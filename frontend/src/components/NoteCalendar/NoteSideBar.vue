@@ -99,7 +99,7 @@
             color="success"
             label-before
           >
-            {{ goalCompleted ? 'Completed' : 'Uncompleted' }}
+            {{ selectedGoal.goalCompleted ? 'Completed' : 'Uncompleted' }}
           </vs-checkbox>
         </div>
       </div>
@@ -249,7 +249,6 @@ const confirmDeleteGoal = async () => {
 }
 
 const handleEditGoal = (item) => {
-  console.log(item)
   // set value
   selectedGoal.value = {
     id: item.key,
@@ -266,6 +265,8 @@ const handleSubmitGoalEdit = async () => {
     console.log(data.message)
   } else {
     await calendarStore.setGoal()
+    menuItems.value = await calendarStore.getGoalLinkedList()
+    editGoalForm.value = false
   }
 }
 </script>
