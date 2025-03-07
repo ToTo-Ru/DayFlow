@@ -51,3 +51,4 @@ docker-compose up --build
 - **Database Connection**: Fixed connectivity by aligning environment variables and Docker settings.
 - **Unified API Response**: Designed a consistent return structure (`Result`) in Spring Boot with `code`, `data`, and `message` fields, improving frontend error handling and data consistency across all endpoints.
 - **Clearify code structure by AOP**: Using AOP for User Ownership checking before editing item, improve code structure, maintainability and extensibility.
+- **Code decoupling by MVC design pattern**: Using MVC to clarify frontend and backend, which provide a higher readability and maintainability.
