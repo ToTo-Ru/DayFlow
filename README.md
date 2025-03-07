@@ -7,7 +7,7 @@ A simple calendar app to help you organize your goals, events, and todos—all i
 - **Track Your Goals**: Connect your personal goals with events and daily todos.
 - **Manage Your Time**: Add, view, and edit events and tasks on a weekly calendar.
 - **Stay Organized**: Works smoothly across months to keep your schedule clear.
-
+![Image](https://github.com/user-attachments/assets/34c1071d-e765-403d-9b95-c71aa8e97516)
 ![Image](https://github.com/user-attachments/assets/09b10042-1360-44de-98c1-8ee34817c0a6)
 
 ---
@@ -50,3 +50,4 @@ docker-compose up --build
 - **CORS Issue**: Configured Spring Boot to allow cross-origin requests from the frontend domain.
 - **Database Connection**: Fixed connectivity by aligning environment variables and Docker settings.
 - **Unified API Response**: Designed a consistent return structure (`Result`) in Spring Boot with `code`, `data`, and `message` fields, improving frontend error handling and data consistency across all endpoints.
+- **Clearify code structure by AOP**: Using AOP for User Ownership checking before editing item, improve code structure, maintainability and extensibility.
